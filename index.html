@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="테스트">
+        <meta name="author" content="타퍼">
+        <title id="titleofpage">실험실</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <input class="opnnaver" type="button" id="button" value="N" onclick="window.open('https://naver.com')"></input>
+        <br>
+        <input class="gudok" type="button" id="bu_alert" value="▶" onclick="gdok()"></input>
+        <br>
+        <input class="seetime" type="button" id="tb" onclick="repeat()" value="시간보기"></input>
+        <br>
+        <!--<input type="textarea" id="txtarea"></input>
+<br>
+<button onclick="">실행</button>
+<br>
+<h1 id="result">결과</h1>
+<br>-->
+        <h1 id="time">여기에 시간이 뜰것입니다</h1>
+        <script>
+            function repeat() {
+                setInterval('time()', 1);
+            }
+            function time() {
+                document.getElementById('time').innerHTML = Date();
+            }
+            /*/코드수정하기/*/
+            /*/function cmdrun(){
+                if ('txtarea' === 실행) {
+                    document.getElementById('result').InnerHTML = Math.floor(Math.random() * 100000);
+                }
+                else {
+                    document.getElementById('result').InnerHTML = 실패;
+                }
+                }/*/
+                function gdok(){
+                    if(confirm('χταρυ 구독')){location.href='xtapu_home.html'};
+                }
+
+        </script>
+        <style>
+            .opnnaver {
+    background-color:rgb(0, 255, 0);
+    color:white;
+    font-weight:bold;
+    height:50px;
+    max-width:50px;
+    font-size: 30px;
+}
+.gudok{
+    background-color:rgb(255,0,0);
+    color:white;
+    font-weight:bold;
+    height:50px;
+    max-width:100px;
+    font-size: 30px;
+}
+.seetime{
+    background-color:rgb(255,255,255);
+    color:Cyan;
+    font-weight:bold;
+    height:50px;
+    max-width:120px;
+    font-size:30px;
+}
+        </style>
+    </body>
+</html>
